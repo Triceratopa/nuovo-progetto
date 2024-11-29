@@ -1,0 +1,11 @@
+.movie-item {
+    position: relative;
+  }
+  
+  .movie-item .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.8); }

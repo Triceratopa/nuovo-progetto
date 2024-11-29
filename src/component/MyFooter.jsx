@@ -1,63 +1,64 @@
 import React from "react";
 import { Container,Row,Col,Button } from "react-bootstrap";
 
+
 const MyFooter=()=>{
     return(
-        <footer>
+        <footer className="mt-5 bg-dark">
             <Container>
                 <Row>
                     <Col>
                     <ul style={{listStyleType:'none'}}>
-                        <li>
-                            <a href="">Audiodescrizione</a>
+                        <li  className="text-decoration-none text-white">
+                            <a href="" style={{color: 'white', textDecoration: 'none'}} >Audiodescrizione</a>
                         </li>
                         <li>
-                            <a href="">Rapporti con gli investitori</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Rapporti con gli investitori</a>
                         </li>
                         <li>
-                            <a href="">Note legali</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Note legali</a>
                         </li>
                         <li>
-                            <a href="">Preferenze pubbliche</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Preferenze pubbliche</a>
                         </li>
                         <li>
-                        <Button variant="outline-secondary">Codice di servizio</Button>
+                        <Button variant="outline-secondary" className="mt-3">Codice di servizio</Button>
                         </li>
                         <li>
-                            <p>1997-2024 Netflix, Inc.</p>
+                            <p style={{color: 'white', textDecoration: 'none'}}>1997-2024 Netflix, Inc.</p>
                         </li>
                     
                     </ul>
                     </Col>
                     <Col><ul style={{listStyleType:'none'}}>
                     <li>
-                            <a href="">Centro assistenza</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Centro assistenza</a>
                         </li>
                         <li>
-                            <a href="">Opportunità di lavoro</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Opportunità di lavoro</a>
                         </li>
                         <li>
-                            <a href="">Preferenze per i cookie</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Preferenze per i cookie</a>
                         </li></ul></Col>
                         <Col><ul style={{listStyleType:'none'}}>
                     <li>
-                            <a href="">Carte regalo</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Carte regalo</a>
                         </li>
                         <li>
-                            <a href="">Condizioni di utilizzo</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Condizioni di utilizzo</a>
                         </li>
                         <li>
-                            <a href="">Informazioni sull'azienda</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Informazioni sull'azienda</a>
                         </li></ul></Col>
                         <Col><ul style={{listStyleType:'none'}}>
                     <li>
-                            <a href="">Media Center</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Media Center</a>
                         </li>
                         <li>
-                            <a href="">Privacy</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Privacy</a>
                         </li>
                         <li>
-                            <a href="">Contattaci</a>
+                            <a href="" style={{color: 'white', textDecoration: 'none'}}>Contattaci</a>
                         </li></ul></Col>
                 </Row>
             </Container>

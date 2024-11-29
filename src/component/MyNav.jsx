@@ -5,12 +5,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import MyNavRight from './MyNavRight'
+import logo from '../img/logo.png'
+
 
 function MyNav() {
     return (
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-dark">
         <Container fluid>
-          <Navbar.Brand href="#"></Navbar.Brand>
+          <Navbar.Brand href=""><img src={logo} alt="logo" style={{height:'60px', width:'100px'}}/></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -18,34 +21,29 @@ function MyNav() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Serie Tv</Nav.Link>
-              <Nav.Link href="#">
+              <Nav.Link href="#action1" className="text-white">Home</Nav.Link>
+              <Nav.Link href="#action2" className="text-white">Serie Tv</Nav.Link>
+              <Nav.Link href="#" className="text-white">
                 Film
               </Nav.Link>
-              <NavDropdown title="La mia lista" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown title={
+        <span className="text-white my-auto">Info</span>
+    } id="navbarScrollingDropdown" className="text-white border-white bg-body-white" >
+                <NavDropdown.Item href="#action3">Acccount</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
-                  Another action
+                  Settings
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
-                  Something else here
+                  Help
                 </NavDropdown.Item>
               </NavDropdown>
               
             </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+            
           </Navbar.Collapse>
         </Container>
+        <MyNavRight/>
       </Navbar>
     );
   }
