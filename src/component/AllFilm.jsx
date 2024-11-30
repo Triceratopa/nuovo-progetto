@@ -10,6 +10,7 @@ import SingleFilm from "./SingleFilm";
 class AllFilm extends Component {
     state ={ /*creo l'array vuoto che conterrà i film */
         movies:[],
+        isLoading:true,
         /*ho preso le impostazioni del carousel da: https://refine.dev/blog/react-slick/#creating-slides-for-the-carousel e da: https://react-slick.neostack.com/  modificandole un po'*/ 
         settings:{
             speed:400,
