@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import MyNavRight from './MyNavRight'
 import logo from '../img/logo.png'
+import { Link } from "react-router-dom";
 
 
 function MyNav() {
@@ -21,8 +22,8 @@ function MyNav() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1" className="text-white">Home</Nav.Link>
-              <Nav.Link href="#action2" className="text-white">Serie Tv</Nav.Link>
+              <Link  className="text-white nav-link" to="/">Home</Link>
+              <Link  className="text-white nav-link" to="/tv-shows">Serie Tv</Link>
               <Nav.Link href="#" className="text-white">
                 Film
               </Nav.Link>
